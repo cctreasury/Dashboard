@@ -36,11 +36,11 @@ jobs:
             description: 'Incoming and Outgoing Transaction'
             widgets:
             - type: number
-              issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Incoming" created:<{{ date("-0 days") }}'
+              issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Incoming" created:<{{ date("0 days") }}'
               title: 'Incoming'
               color: 'green'
             - type: number
-              issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Outgoing" created:<{{ date("-0 days") }}'
+              issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Outgoing" created:<{{ date("0 days") }}'
               title: 'Outgoing'
               color: 'red'
           - title: 'All time status'
