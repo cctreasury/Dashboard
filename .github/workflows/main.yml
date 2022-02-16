@@ -128,7 +128,7 @@ jobs:
             widgets:
             - type: 'table'
               title: 'General ADA Holders Comments'
-              issue_query: 'project:cctreasury/Treasury-system/1 is:issue is:open label:"Community Advisor" created:<{{ date("1 days") }} updated:>{{ date("-30 days") }} sort:created-asc'
+              issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Incoming" label:"Outgoing" created:<{{ date("1 days") }} updated:>{{ date("-30 days") }} sort:created-asc'
               fields:
               - title: 'Title'
                 property: title
