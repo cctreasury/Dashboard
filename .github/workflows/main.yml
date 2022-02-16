@@ -38,11 +38,11 @@ jobs:
             - type: number
               issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Incoming" created:<{{ date("-0 days") }}'
               title: 'Incoming'
-              color: 'red'
-            - type: number
-              issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Outgoing" closed:<{{ date("-0 days") }}'
-              title: 'Outgoing'
               color: 'green'
+            - type: number
+              issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Outgoing" created:<{{ date("-0 days") }}'
+              title: 'Outgoing'
+              color: 'red'
           - title: 'All time status'
             description: 'Total Issues opened and closed'
             widgets:
