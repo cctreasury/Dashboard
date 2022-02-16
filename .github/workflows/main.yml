@@ -134,7 +134,7 @@ jobs:
               - title: 'Title'
                 property: title
               - title: 'Running Total'
-                value: '{{ userdata.num2 - item.title }}'
+                value: '{{ userdata.num2 -= item.title }}'
               - title: 'Date Created'
                 value: '{{ date(item.created_at) }}'
           - title: 'Important Dates'
