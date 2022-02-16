@@ -131,10 +131,10 @@ jobs:
               title: 'General ADA Holders Comments'
               issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Outgoing" created:<{{ date("1 days") }} updated:>{{ date("-30 days") }} sort:created-asc'
               fields:
-              - title: 'Title'
-                property: body
-              - title: 'Balance'
-                value: '{{ userdata.num2 -= item.title }}'
+              - title: 'Outgoing'
+                property: title
+              - title: '{{ userdata.num2 }}'
+                value: '{{ (userdata.num2 -= item.title).toFixed(2) }}'
               - title: 'Date Created'
                 value: '{{ date(item.created_at) }}'
           - title: 'Important Dates'
