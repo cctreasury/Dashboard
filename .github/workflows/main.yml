@@ -32,8 +32,8 @@ jobs:
             }
             userdata.num = 0
           sections:
-          - title: 'Current Status'
-            description: 'Incoming and Outgoing Transaction'
+          - title: 'Current Status of Power Up The Catalyst Circle'
+            description: 'Incoming and Outgoing Transactions'
             widgets:
             - type: number
               issue_query: 'project:cctreasury/Treasury-system/1 is:issue label:"Incoming" created:<{{ date("1 days") }}'
