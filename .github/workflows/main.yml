@@ -20,7 +20,7 @@ jobs:
       uses: ethomson/issue-dashboard@v1
       with:
         config: |
-          title: 'Catalyst Prioritized Problems Dashboard'
+          title: 'CC Treasury'
           output:
             format: html
             filename: 'out/index.html'
@@ -36,7 +36,7 @@ jobs:
             description: 'Current state of Issues'
             widgets:
             - type: number
-              issue_query: 'project:Catalyst-Circle/Catalyst-Prioritized-Problems/3 is:issue created:>{{ date("-30 days") }}'
+              issue_query: 'project:cctreasury/Treasury-system/1 is:issue created:>{{ date("-30 days") }}'
               title: 'Opened issues this month'
               color: 'red'
             - type: number
