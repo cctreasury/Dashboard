@@ -133,7 +133,7 @@ jobs:
               fields:
               - title: 'Outgoing'
                 property: title
-              - title: '{{ userdata.num2 }}'
+              - title: {{ userdata.num2 }}
                 value: '{{ (userdata.num2 -= item.title).toFixed(2) }}'
               - title: 'Date Created'
                 value: '{{ date(item.created_at) }}'
